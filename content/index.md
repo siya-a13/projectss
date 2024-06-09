@@ -1,8 +1,8 @@
 ---
-title: Explore
+title: Explore blogs published by Deepak Nishad
 ---
 
 Topics below 👇
 
 
-[[deepnotes setup]]
+[[Deepnotes setup]]
