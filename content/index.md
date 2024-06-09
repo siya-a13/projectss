@@ -1,8 +1,8 @@
 ---
-title: Explore blogs published by Deepak Nishad
+title: Explore blogs by Me
 ---
 
 Topics below 👇
 
-[[Deepnotes setup]]
-[[Production grade MYSQL DBA|Production grade MYSQL DBA]]
+## [[Deepnotes setup]]
+## [[Production grade MYSQL DBA|Production grade MYSQL DBA]]

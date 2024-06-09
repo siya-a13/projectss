@@ -1,6 +1,6 @@
 ---
 title: InnoDB Storage Engine Configuration
 ---
-Topics :-
+Topics -
 
-[[InnoDB Flush Methods]]
+## [[InnoDB Flush Methods]]
