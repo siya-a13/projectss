@@ -7,4 +7,8 @@ title: AWS Certified Data Engineer - Associate
 
 ## [[Amazon DynamoDB Accelerator (DAX)]] 
 
+## [[Amazon DynamoDB - Time To Live (TTL)]]
+
+## [[Amazon DynamoDB - Security]] 
+
 
