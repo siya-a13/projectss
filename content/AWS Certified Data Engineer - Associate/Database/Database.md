@@ -12,3 +12,10 @@ title: Database
 ## [[Amazon DynamoDB - Security]] 
 
 ## [[Amazon DocumentDB]]
+
+## [[Shared and exclusive locks in RDS]]
+
+## [[Amazon Redshift Intro & Architecture]]
+
+## [[Redshift Distribution Styles]]
+
