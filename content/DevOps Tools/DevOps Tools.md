@@ -8,3 +8,5 @@ longform:
   ignoredFiles: []
 ---
 ## [[Kubernetes]]
+
+## [[Monitoring]]

@@ -1,12 +1,9 @@
 ---
 longform:
   format: scenes
-  title: Kubernetes
+  title: GCP
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
 ---
-## [[Architechture]]
-
-## [[Operator]]

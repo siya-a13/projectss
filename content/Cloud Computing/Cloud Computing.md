@@ -1,12 +1,9 @@
 ---
 longform:
   format: scenes
-  title: Kubernetes
+  title: Cloud Computing
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
 ---
-## [[Architechture]]
-
-## [[Operator]]

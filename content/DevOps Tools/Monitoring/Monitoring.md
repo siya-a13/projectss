@@ -1,12 +1,10 @@
 ---
 longform:
   format: scenes
-  title: Kubernetes
+  title: Monitoring
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
 ---
-## [[Architechture]]
-
-## [[Operator]]
+## [[Prometheus]]
