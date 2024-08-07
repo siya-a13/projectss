@@ -4,3 +4,9 @@ longform:
   title: Analytics
 ---
 ## [[AWS Glue]]
+
+## [[Lake Formation]]
+
+## [[EMR]]
+
+
