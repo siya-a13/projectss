@@ -9,4 +9,8 @@ longform:
 
 ## [[EMR]]
 
+## [[Kinesis Data Streams]]
+
+## [[Kinesis Data Firehose]]
+
 
