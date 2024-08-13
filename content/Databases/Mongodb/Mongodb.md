@@ -1,12 +1,10 @@
 ---
 longform:
   format: scenes
-  title: Databases
+  title: Mongodb
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
 ---
-## [[Cassandra]]
-
-## [[Mongodb]]
+## [[Container setup]]
