@@ -1,14 +1,15 @@
 ---
 longform:
   format: scenes
-  title: Application Integration
+  title: PostgreSQL
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
-title: Application Integration
 ---
-## [[SQS]]
+## [[content/Databases/PostgreSQL/Architecture|Architecture]]
 
-## [[Step Function]]
+## [[Setup Replication]]
+
+
 

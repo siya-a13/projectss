@@ -1,14 +1,14 @@
 ---
 longform:
   format: scenes
-  title: Application Integration
+  title: "Hashicorp Packer "
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
-title: Application Integration
 ---
-## [[SQS]]
+## [[Mutable and Immutable Infrastructure]]
 
-## [[Step Function]]
+## [[How Packer Works]]
+
 
