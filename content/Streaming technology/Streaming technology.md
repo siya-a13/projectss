@@ -1,14 +1,10 @@
 ---
 longform:
   format: scenes
-  title: Databases
+  title: Streaming technology
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
 ---
-## [[Cassandra]]
-
-## [[Mongodb]]
-
-## [[PostgreSQL]]
+## [[Kafka]]
