@@ -5,6 +5,12 @@ longform:
 ---
 These commands are for benchmarking a PostgreSQL database using `sysbench`, specifically focusing on OLTP (Online Transaction Processing) read-write workloads.
 
+## Pgbench
+
+```
+pgbench -i -s 50 -h 127.0.0.1 -p 5432 -U dba test
+```
+
 ## Command 1: Preparation Phase
 
 ```

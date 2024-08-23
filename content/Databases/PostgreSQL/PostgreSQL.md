@@ -9,7 +9,7 @@ longform:
 ---
 ## [[content/Databases/PostgreSQL/Architecture|Architecture]]
 
-## [[Setup Replication]]
+## [[Replication Status]]
 
 ## [[content/Databases/PostgreSQL/Container setup|Container setup]]
 
