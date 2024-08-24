@@ -2,7 +2,7 @@
 longform:
   format: single
   title: Container setup
-title: Container setup
+title: Local setup
 ---
 ## Launch container
 
