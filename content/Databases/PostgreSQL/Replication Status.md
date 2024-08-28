@@ -65,3 +65,5 @@ SELECT
 ```
 
 If `last_received_lsn` and `last_replayed_lsn` are equal or very close, it means the standby server is up-to-date with the master.
+
+Refer - https://www.cherryservers.com/blog/how-to-set-up-postgresql-database-replication

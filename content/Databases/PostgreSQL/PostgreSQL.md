@@ -9,11 +9,16 @@ longform:
 ---
 ## [[Postgres Architecture]]
 
+## [[Setup Replication]]
+
 ## [[Replication Status]]
 
 ## [[Local setup]]
 
 ## [[Benchmark PostgreSQL]]
+
+## [[DBA Commands]]
+
 
 
 
