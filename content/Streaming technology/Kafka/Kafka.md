@@ -7,9 +7,10 @@ longform:
   scenes: []
   ignoredFiles: []
 ---
-## [[content/Streaming technology/Kafka/Architecture|Architecture]]
+## [[Kafka Architecture]]
 
 ## [[Producer]]
 
 ## [[Consumer groups and offset]]
+
 

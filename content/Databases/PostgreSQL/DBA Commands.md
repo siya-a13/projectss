@@ -43,5 +43,37 @@ SELECT pg_promote();
 Take postgresql backup in background .
 
 ```
-nohup sudo pg_basebackup -h 13.201.7.67 -U replica_user -X stream -C -S slaveslot3 -P -v -R -w -D /var/lib/postgresql/14/main/ > pg_basebackup.log 2>&1 &
+nohup pg_basebackup -h 172.31.33.236 -U replica_user -X stream -C -S slaveslot5 -P -w -v -R -D ./main/ > pg_basebackup.log 2>&1 &
+```
+
+- #### Use `pg_basebackup` with the `.pgpass` file
+
+When running `pg_basebackup`, specify the host and user directly in the command. The password will be automatically picked from the `.pgpass` file.
+
+```
+localhost:5432:*:myuser:mypassword
+```
+
+**Set permissions** (important for security):
+
+```
+chmod 600 ~/.pgpass
+```
+
+## Active connection
+
+
+```
+SELECT
+    usename,
+    ssl,
+    client_addr,
+    application_name,
+    state
+FROM
+    pg_stat_ssl
+JOIN
+    pg_stat_activity
+ON
+    pg_stat_ssl.pid = pg_stat_activity.pid;
 ```

@@ -2,10 +2,13 @@
 longform:
   format: single
   title: Architecture
+title: Kafka Architecture
 ---
-![[kafka.png]]
+
 
 Apache Kafka is a distributed event streaming platform that is used for building real-time data pipelines and streaming applications. Here's an overview of its architecture:
+
+![[kafka-architecture.png]]
 
 ### 1. **Producer**
 
