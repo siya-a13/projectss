@@ -7,3 +7,5 @@ title: AWS Certified Data Engineer - Associate
 
 ## [[Management and Governance]]
 
+## [[Storage]]
+
