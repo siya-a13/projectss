@@ -1,15 +1,10 @@
 ---
 longform:
   format: scenes
-  title: DevOps Tools
+  title: Hashicorp Terraform
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
   ignoredFiles: []
 ---
-## [[Kubernetes]]
-
-## [[Monitoring]]
-
 ## [[Terraform Module]]
-

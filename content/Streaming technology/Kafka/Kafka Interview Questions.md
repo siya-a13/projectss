@@ -2,7 +2,7 @@
 longform:
   format: single
   title: Interview Questions
-title: Interview Questions
+title: Kafka Interview Questions
 ---
 - ## What is Apache Kafka ?
 

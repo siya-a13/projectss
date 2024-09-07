@@ -15,7 +15,8 @@ longform:
 
 ## [[Idempotent Producer]]
 
-## [[content/Streaming technology/Kafka/Interview Questions|Interview Questions]]
+## [[Kafka Interview Questions]]
+
 
 
 
