@@ -15,6 +15,9 @@ longform:
 
 ## [[Idempotent Producer]]
 
+## [[Ordering Guarantee]]
+
+## [[Log rotation]]
 ## [[Kafka Interview Questions]]
 
 
