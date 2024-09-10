@@ -6,6 +6,7 @@ longform:
   sceneFolder: /
   scenes: []
   ignoredFiles: []
+title: Kafka
 ---
 ## [[Kafka Architecture]]
 
@@ -18,6 +19,22 @@ longform:
 ## [[Ordering Guarantee]]
 
 ## [[Log rotation]]
+
+## [[Kafka with zookeeper]]
+
+## [[Why Kraft]]
+
+## [[Controlled Shutdown (CS)]]
+
+## [[Uncontrolled Shutdown]]
+
+## [[Divergent View]]
+
+## [[Kraft Mode Architecture]]
+
+## [[Quorum Base Replication]]
+
+## [[Leader Election Protocal]]
 ## [[Kafka Interview Questions]]
 
 
