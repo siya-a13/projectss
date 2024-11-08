@@ -19,6 +19,9 @@ longform:
 
 ## [[DBA Commands]]
 
+## [[content/Databases/PostgreSQL/Interview Questions|Interview Questions]]
+
+
 
 
 
