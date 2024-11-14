@@ -5,3 +5,6 @@ title: Production grade MYSQL DBA
 ## [[Docker and MYSQL]]
 
 ## [[Alter Options And Locking Scenarios]]
+
+## [[Tuning MySQL]]
+
