@@ -8,3 +8,7 @@ longform:
   ignoredFiles: []
 ---
 ## [[Kafka]]
+
+## [[Celery]]
+
+
