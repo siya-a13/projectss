@@ -31,8 +31,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
+          name: quartz-site
           path: public
- 
+
   deploy:
     needs: build
     environment:
@@ -41,10 +42,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
-          name: artifact
-          path: public
+          name: quartz-site 
+          path: public 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
