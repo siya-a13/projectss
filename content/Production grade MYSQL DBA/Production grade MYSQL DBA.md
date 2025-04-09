@@ -14,5 +14,8 @@ title: Production grade MYSQL DBA
 
 ## [[SetupReplication]]
 
+## [[Alter Schema With gh-ost]]
+
+
 
 
