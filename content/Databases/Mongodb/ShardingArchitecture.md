@@ -157,3 +157,8 @@ db.myCollection.getShardDistribution();
 sh.isBalancerRunning();
 
 ```
+
+```
+mongorestore --drop --dir=/path/to/dump
+
+```

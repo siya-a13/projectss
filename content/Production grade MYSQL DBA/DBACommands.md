@@ -13,6 +13,20 @@ FROM information_schema.tables
 GROUP BY table_schema;
 ```
 
+# Show tables size
+
+```
+SELECT 
+    table_name AS "Table",
+    ROUND(SUM(data_length + index_length) / 1024 / 1024 / 1024, 2) AS "Size (GB)"
+FROM 
+    information_schema.tables
+WHERE 
+    table_schema = 'webtune_prod'
+GROUP BY 
+    table_name;
+```
+
 # Create root user
 
 ```
@@ -26,7 +40,7 @@ GRANT CREATE USER ON *.* TO 'dba'@'%';
 
 FLUSH PRIVILEGES
 
-mysql -u dba -p'A$Ea`LQCd+CD5_=^'
+mysql -u dba -p'V6j$&=hu>A>f-IU'
 
 ```
 
@@ -47,7 +61,7 @@ nohup mydumper --threads 4 --user dba --password 'A$Ea`LQCd+CD5_=^' --host 172.1
 ### Multiple databases
 
 ```
-nohup mydumper --threads 2 --user dba --password 'A$Ea`LQCd+CD5_=^' --host 172.16.1.6 --compress --tz-utc --verbose 3 --compress-protocol --outputdir /home/ubuntu/backup/scalenut --rows 10000 --regex '^(?!(mysql|sys|information_schema|performance_schema))' > mydumper_output.log 2>&1 &
+nohup mydumper --threads 2 --user dba --password 'A$Ea`LQCd+CD5_=^' --host 10.0.40.4 --compress --tz-utc --verbose 3 --compress-protocol --outputdir /home/ubuntu/azure_scalenut_master_backup --rows 10000 --long-query-guard=28800 --regex '^(?!(mysql|sys|information_schema|performance_schema))' > mydumper_output.log 2>&1 &
 
 ```
 
@@ -57,7 +71,7 @@ nohup mydumper --threads 2 --user dba --password 'A$Ea`LQCd+CD5_=^' --host 10.0.
 # Restore
 
 ```
-nohup myloader -d /home/ubuntu/backup -h 10.0.40.4 -u dba -p 'A$Ea`LQCd+CD5_=^' --overwrite-tables --queries-per-transaction 10000 --verbose 3 --threads 3 > myloader.log 2>&1 &
+nohup myloader -d /home/ubuntu/azure_scalenut_master_backup -h 10.0.40.17 -u dba -p 'A$Ea`LQCd+CD5_=^' --overwrite-tables --queries-per-transaction 10000 --verbose 3 --threads 8 > myloader.log 2>&1 &
 ```
 
 ```
@@ -73,7 +87,7 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.TABLES 
 WHERE 
-    TABLE_SCHEMA = 'scalenut';
+    TABLE_SCHEMA = 'webtune_prod';
 ```
 
 # Migrate Users
@@ -81,7 +95,7 @@ WHERE
 ## Take dump
 
 ```
-mysqldump -u root -p'V6j$&=hu>A>f-IU' --databases mysql --tables user db tables_priv columns_priv procs_priv proxies_priv global_grants --skip-add-drop-table --no-create-info --insert-ignore --set-gtid-purged=OFF --flush-privileges --single-transaction > mysql_privileges_full.sql
+mysqldump -u root -p'A$Ea`LQCd+CD5_=^' --databases mysql --tables user db tables_priv columns_priv procs_priv proxies_priv --skip-add-drop-table --no-create-info --insert-ignore --set-gtid-purged=OFF --flush-privileges --single-transaction > mysql_privileges_full.sql
 ```
 
 ## Restore
@@ -398,4 +412,31 @@ SET bulk_insert_buffer_size = 64M;
 SET GLOBAL net_buffer_length = 16M;
 SET GLOBAL tmp_table_size = 64M;
 SET GLOBAL max_heap_table_size = 64M;
+```
+
+# Reset Root Password
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'j4g%?/^n6W[9f8';
+
+FLUSH PRIVILEGES;
+
+```
+
+# Create Read Only User
+
+```
+CREATE USER 'read_only'@'%' IDENTIFIED BY 'read@user$#@!';
+
+GRANT SELECT ON webtune_prod.* TO 'read_only'@'%';
+
+FLUSH PRIVILEGES;
+
+DROP USER 'read_only'@'%';
+
+SHOW VARIABLES LIKE 'read_only';
+
+SET GLOBAL read_only = ON;
+
+
 ```
