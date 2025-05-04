@@ -7,6 +7,7 @@ longform:
   scenes: []
   ignoredFiles: []
 ---
+## [[Linux]]
 ## [[Kubernetes]]
 
 ## [[Monitoring]]
