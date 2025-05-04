@@ -11,8 +11,8 @@ title: Linux
 
 - Linux file system hierarchy 
 - Basic Linux commands (ls, cd, mkdir, rm, cp, mv, etc.)
+-  User and group management
 - File permissions and ownership (chmod, chown)
-- User and group management
 - Process management (ps, top, htop, kill, systemctl)
 - Package management (apt, yum, dnf, rpm, dpkg)
 - Text processing tools (grep, awk, sed, cut, sort, uniq)
@@ -25,5 +25,9 @@ title: Linux
 ## [[File System Hierarchy]]
 
 ## [[Basic Commands]]
+
+## [[User and Group Management]]
+
+## [[File Permissions]]
 
 
