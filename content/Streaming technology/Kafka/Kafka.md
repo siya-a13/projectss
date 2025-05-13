@@ -35,6 +35,10 @@ title: Kafka
 ## [[Quorum Base Replication]]
 
 ## [[Leader Election Protocal]]
+
+## [[Kafka Key Observability Metrices]]
+
+## [[Kafka ACLS]]
 ## [[Kafka Interview Questions]]
 
 
