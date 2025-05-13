@@ -20,3 +20,5 @@ Topics below 👇
 ## [[Data Lake]]
 
 ## [[Interview Questions]]
+
+# [[dynamodb -pt1]]
